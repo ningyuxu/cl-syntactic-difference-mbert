@@ -143,16 +143,16 @@ class HDF5Dataset:
                     for j in range(1, i):
                         if observation.head_ids[i] == j:
                             label = observation.arc_label_ids[i]
-                            diff = observation.hidden_state[i] - observation.hidden_state[j]
+                            diff = observation.hidden_state[j] - observation.hidden_state[i]
                         elif observation.head_ids[j] == i:
                             label = observation.arc_label_ids[j]
-                            diff = observation.hidden_state[j] - observation.hidden_state[i]
+                            diff = observation.hidden_state[i] - observation.hidden_state[j]
                         elif count_non < observation.length - 2:
                             label = 0
                             i_depth = compute_depth(idx=i, head_ids=observation.head_ids)
                             j_depth = compute_depth(idx=j, head_ids=observation.head_ids)
                             diff = np.sign(i_depth - j_depth) * (
-                                    observation.hidden_state[i] - observation.hidden_state[j])
+                                    observation.hidden_state[j] - observation.hidden_state[i])
                             count_non += 1
                         else:
                             continue
@@ -164,10 +164,10 @@ class HDF5Dataset:
                     for j in range(1, i):
                         if observation.head_ids[i] == j:
                             label = observation.arc_label_ids[i]
-                            diff = observation.hidden_state[i] - observation.hidden_state[j]
+                            diff = observation.hidden_state[j] - observation.hidden_state[i]
                         elif observation.head_ids[j] == i:
                             label = observation.arc_label_ids[j]
-                            diff = observation.hidden_state[j] - observation.hidden_state[i]
+                            diff = observation.hidden_state[i] - observation.hidden_state[j]
                         else:
                             continue
                         labels.append(label)
@@ -178,10 +178,10 @@ class HDF5Dataset:
                     for j in range(1, i):
                         if observation.head_ids[i] == j and observation.arc_label_ids[i] == self.label2id[self.LOI]:
                             label = observation.arc_label_ids[i]
-                            diff = observation.hidden_state[i] - observation.hidden_state[j]
+                            diff = observation.hidden_state[j] - observation.hidden_state[i]
                         elif observation.head_ids[j] == i and observation.arc_label_ids[j] == self.label2id[self.LOI]:
                             label = observation.arc_label_ids[j]
-                            diff = observation.hidden_state[j] - observation.hidden_state[i]
+                            diff = observation.hidden_state[i] - observation.hidden_state[j]
                         else:
                             continue
                         labels.append(label)
