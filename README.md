@@ -4,7 +4,6 @@ This repository contains code for the EMNLP 2022 Paper *Cross-Linguistic Syntact
 
 The code has not been refactored, and we will update a refactored version soon.
 
----
 
 ## Data
 
@@ -12,7 +11,7 @@ The code has not been refactored, and we will update a refactored version soon.
 
 The Universal Dependencies (UD) [version 2.8](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3687) Treebank is used for our experiments, and we follow the split of training, development and test set in UD.
 
----
+
 
 ## Experiments
 
@@ -37,7 +36,6 @@ We follow the setup of Wu and Dredze (2019), which replaces the LSTM encoder in 
 
 We use a [gradient boosting regressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html) with 100 estimators and each has a maximum depth of 3. We use the squared error for regression with the default learning rate of 1e-1.
 
----
 
 ## Reference
 
