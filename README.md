@@ -1,6 +1,6 @@
 # Cross-Linguistic Syntactic Difference in mBERT
 
-This repository contains code for the EMNLP 2022 Paper *Cross-Linguistic Syntactic Difference in Multilingual BERT: How Good is It and How Does It Affect Transfer*. 
+This repository contains code for the EMNLP 2022 Paper *Cross-Linguistic Syntactic Difference in Multilingual BERT: How Good is It and How Does It Affect Transfer*.
 
 The code has not been refactored, and we will update a refactored version soon.
 
