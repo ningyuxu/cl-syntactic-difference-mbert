@@ -6,9 +6,9 @@ We are integrating the code from this repository into our [Calf](https://github.
 
 Progress (at [Calf](https://github.com/ningyuxu/calf)):
 
-- [x] Zero-shot cross-lingual depedency parsing with Multilingual BERT (mBERT)
+- [x] ~~Zero-shot cross-lingual depedency parsing with Multilingual BERT (mBERT)~~
 
-- [x] Probing mBERT for grammatical relations
+- [x] ~~Probing mBERT for grammatical relations~~
 
 - [ ] Measuring the syntactic difference in mBERT through OTDD
 
