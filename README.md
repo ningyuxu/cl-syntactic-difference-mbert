@@ -8,7 +8,7 @@ Progress (at [Calf](https://github.com/ningyuxu/calf)):
 
 - [x] Zero-shot cross-lingual depedency parsing with Multilingual BERT (mBERT)
 
-- [ ] Probing mBERT for grammatical relations
+- [x] Probing mBERT for grammatical relations
 
 - [ ] Measuring the syntactic difference in mBERT through OTDD
 
