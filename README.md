@@ -10,7 +10,7 @@ Progress (at [Calf](https://github.com/ningyuxu/calf)):
 
 - [x] ~~Probing mBERT for grammatical relations~~
 
-- [ ] Measuring the syntactic difference in mBERT through OTDD
+- [x] ~~Measuring the syntactic difference in mBERT through OTDD~~
 
 - [ ] Predicting the syntactic difference in mBERT based on WALS features.
 
