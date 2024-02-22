@@ -2,17 +2,7 @@
 
 This repository contains code for the EMNLP 2022 Paper [*Cross-Linguistic Syntactic Difference in Multilingual BERT: How Good is It and How Does It Affect Transfer*](https://aclanthology.org/2022.emnlp-main.552).
 
-We are integrating the code from this repository into our [Calf](https://github.com/ningyuxu/calf) framework and will update the entire code repository upon completion.
-
-Progress (at [Calf](https://github.com/ningyuxu/calf)):
-
-- [x] ~~Zero-shot cross-lingual depedency parsing with Multilingual BERT (mBERT)~~
-
-- [x] ~~Probing mBERT for grammatical relations~~
-
-- [x] ~~Measuring the syntactic difference in mBERT through OTDD~~
-
-- [ ] Predicting the syntactic difference in mBERT based on WALS features.
+We are integrating the code from this repository into our [Calf](https://github.com/ningyuxu/calf) framework.
 
 ## Data
 
